@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-3">Simple calculator</h1>
+        <input type="text" class="form-control mb-2" id="number_one" placeholder="enter first number">
+        <input type="text"  id="number_two" class="form-control" placeholder="enter second number">
+        <div class="btn- mt-5">
+        <button class="btn btn-lg bg-warning" id="add">+</button bg-red>
+        <button class="btn btn-lg bg-info" id="subtract">-</button class="btn btn-lg">
+        <button class="btn btn-lg bg-warning" id="multiply">*</button>
+        <button class="btn btn-lg bg-success" id="divide">/</button>
+
+    </div>
+        <div class=" mt-5">
+            <label for="">Result</label>
+            <input type="text" class="form-control" disabled id="result">
+            <button class="btn btn-lg bg-warning mt-3" id="reset">Reset</button>
+            <div>
+                <span class="font-italic red" id="info"></span>
+            </div>
+        </div>
+    </div>
+    
+   
+
+    <script src="script.js"></script>
+</body>

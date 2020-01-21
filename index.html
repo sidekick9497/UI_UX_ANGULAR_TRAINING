@@ -1,0 +1,19 @@
+<head></head>
+<body>
+    <h1>js playground</h1>
+</body>
+<script src="script.js">
+    //closure is such a global which can accessed by one function
+    //local variables of iife retains in the memory, even after function memory terminates(IF THEY ARE BEING USED BY INNER
+    //FUNCTIONS)
+    var incr = function()
+    {
+        var counter = 0;
+        return function()
+        {
+            return counter++
+        }
+    }
+    console.log(incr()); //return 1
+    console.log(incr()); //return 2
+</script>
