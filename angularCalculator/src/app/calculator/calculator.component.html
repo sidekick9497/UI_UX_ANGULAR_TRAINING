@@ -1,0 +1,21 @@
+<div class="container mt-5">
+  <h1 class="mb-3">Simple calculator</h1>
+  <input type="text" class="form-control mb-2" #number_one  placeholder="enter first number">
+  <input type="text"  #number_two class="form-control" placeholder="enter second number">
+  <div class="btn- mt-5">
+  <button class="btn btn-lg bg-warning" #add  (click)="calc(number_one,number_two,'+')">+</button >
+  <button class="btn btn-lg bg-info" #subtract (click)="calc(number_one,number_two,'-')">-</button>
+  <button class="btn btn-lg bg-warning" #multiply  (click)="calc(number_one,number_two,'*')">*</button>
+  <button class="btn btn-lg bg-success" #divide  (click)="calc(number_one,number_two,'/')">/</button>
+
+</div>
+  <div class=" mt-5">
+      <label for="">Result</label>
+      <input type="text" class="form-control" [value]="output" disabled #result >
+      <button class="btn btn-lg bg-warning mt-3" #reset (click)="clear()">Reset</button>
+      <div>
+          <span class="font-italic" *ngIf="!isValid"  #info>{{message}}</span>
+      </div>
+  </div>
+</div>
+
