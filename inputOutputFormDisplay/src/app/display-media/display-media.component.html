@@ -1,0 +1,20 @@
+<table class="table mt-5">
+  <thead>
+    <th>
+      Sr.
+    </th>
+    <th>Title</th>
+    <th>filePath</th>
+    <th>description</th>
+    <th>tags</th>
+    <th>Date</th>
+  </thead>
+  <tr *ngFor = "let media of myMedia ; let i=index">
+    <td>{{i+1}}</td>
+    <td>{{media.title}}</td>
+    <td>{{media.filePath}}</td>
+    <td>{{media.description}}</td>
+    <td>{{media.tags}}</td>
+    <td>{{media.date.toUTCString()}}</td>
+  </tr>
+</table>
